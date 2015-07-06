@@ -2,7 +2,7 @@
   "host": "localhost",
   "port": 8080,
   "admin": {"username": "admin", "password": "loremipsumdolorsitamet"},
-  "author": "Lorem Ipsum",
+  "author": "AndrogenIQ",
   "disqus": "loremipsum",
   "paths": {
     "articles": "markdown"}
