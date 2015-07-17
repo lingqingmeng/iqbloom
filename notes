@@ -1,0 +1,24 @@
+nginx is installed in folder:
+/etc/nginx
+
+nginx config file:
+/etc/nginx/nginx.conf
+
+The default site is served from:
+/usr/share/nginx/html
+
+Default site config info:
+/etc/nginx/sites-available/default
+
+
+--config.json---
+{
+	"host": "androgeniq.com",
+	"port": 8080,
+	"admin": {"username": "admin", "password": "loremipsumdolorsitamet"},
+	"author": "Lorem Ipsum",
+	"disqus": "loremipsum",
+	"paths": {
+		"articles": "markdown"
+	}
+}

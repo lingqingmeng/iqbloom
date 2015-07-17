@@ -151,15 +151,26 @@ srv.all(/\/tag\/([A-Za-z0-9\-]+\.html)/, function(req, res) {
  * Display about
  * @example http://semu.mp/about
  */
-srv.all('/about', function(req, res) {
+srv.all('/about', function (req, res) {
   mdb.setMeta('url', mdb.getDefault('url') + req.url);
 	mdb.setMeta('title', 'About');
-	
+	mdb.setMeta('current', 'about');  
   res.render('about', mdb.jadeData({}, req));
 });
 
 /**
+ * Display Team
+ * @example http://semu.mp/team
+ */
+srv.all('/team',function (req,res){
+  mdb.setMeta('url', mdb.getDefault('url') + req.url);
+  mdb.setMeta('title', 'Team');
+  mdb.setMeta('current', 'team');  
+  res.render('team', mdb.jadeData({}, req));
+})
+/**
  * Display Index
+ * equivalent to: app.render(view, [locals], callback)
  * @example http://semu.mp/ 
  **/
 srv.all('/', function(req, res) {
@@ -167,7 +178,7 @@ srv.all('/', function(req, res) {
 	mdb.setMeta('title', 'Home, node-blog');
   mdb.setMeta('current', 'home');
 
-  return res.render('home', mdb.jadeData({list: mdb.getArticles()}, req));
+  return res.render('home', mdb.jadeData({list: mdb.getArticles(), myItems: ['terran','protoss','zerg']}, req));
 });
 
 /**

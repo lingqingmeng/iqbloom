@@ -12,6 +12,7 @@ Need more calcium but lactose intolerant? Yoghurt is 99.9% lactose free. Just sp
 
 I'm sure you've all heard about getting enough protein or calcium from random fitness blogs, but I want to go more in-depth on the last point - a huge factor for increasing test levels. 
 
+
 [[1]](http://www.sciencemag.org/content/339/6123/1084.short).
 > Microbial exposures and sex hormones exert potent effects on autoimmune diseases, many of which are more prevalent in women. We demonstrate that early-life microbial exposures determine sex hormone levels and modify progression to autoimmunity in the nonobese diabetic (NOD) mouse model of type 1 diabetes (T1D). Colonization by commensal microbes elevated serum testosterone and protected NOD males from T1D. 
 

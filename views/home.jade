@@ -1,8 +1,57 @@
+video#pretzel-video.video-playing(loop='loop', preload='auto' autoplay='true')
+    source(src='http://www.foursigmafoods.com/video/2015intro.mp4', type='video/mp4')
+    source(src='http://www.foursigmafoods.com/video/2015intro.webm', type='video/webm')
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+br
+
+
 #article-list.container.home
   section
-    br
-    br
-    img(src="/androgeniqbanner.png")
+    p chessboard will go here
+    p #{myItems.length}
+    ul
+      each val in myItems
+        li(class=val) somecolor
+    div(id="myhover") hoverme
+    //div(class="#{ session.locale }") session.locale
   section
     p Thanks for downloading and running <a href="http://semu.mp/node-blog.html">node-blog</a>, I really appreciate it! With node-blog you have a basic weblog system written in Node.js managed by a folder containing markdown files. All article composing can be done within the web browser using the awesome <a href="http://ace.ajax.org/">Ace editor</a>. Unfortunately there is no other way for changing the layout or static pages than to manually edit the raw jade templates, this may change in future releases…
     p You are viewing the first release of node-blog, please be kind ;) All needed information to start your own blog using node-blog and how to customize the design can be found in the <code>markdown/</code> folder or as <a href="/posts">posts on this site</a>.

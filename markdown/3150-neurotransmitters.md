@@ -23,24 +23,20 @@ The inhibitory neurotransmitter. With high levels of Gaba your fears and worries
 #### 4. Nonepinephrine: 
 Used commonly with 'adrenaline', this neurotransmitter is used to put your body in a state of fight-or-flight. 
 
-Open `config.json` with your favorite text editor and configure node-blog
 
-    {
-      "host": "node-blog.semu.mp",
-      "port": 80,
-      "admin": {"username": "admin", "password": "loremipsumdolor"},
-      "author": "Lorem Ipsum",
-      "disqus": "loremipsum", // disqus username for comments
-      "paths": {
-        "articles": "markdown"}
-    }
-    
-#### 2. Use NPM to install requirements
+So how do neurotransmitters work? I won't give you a monster textbook definition, here's all you need to know: They are chemicals released between nerve cells in order to pass a message to an entire nerve. Neurons are your brain cells, and they essentially regulate your thoughts, mood, emotions. When neurotransmitters gets released onto a neuron, it changes how a neuron responds to inputs. Having an inbalance of neurotransmitters lead to mental disorders such as ADHD, Parkinsons, OCD, Depression, etc. 
 
-    $ > npm install
+How is this relevant. Well whenever you hear or see dopamine re-uptake inhibitor, or serotinin re-uptake inhibitor you usually associate those to big pharma drugs right? Well it turns out that if some substance X-neurotransmitter re-uptake inhibitor can make a person feel a certain way without having any side effects (or it only affects .0001% of the population), certain companies and make tons of money off people.
 
-### Usage
+The problem with re-uptake inhibitors is the law of homeostasis, the body always seek to return to its baseline. Basically, they are a costly band-aid that won't actually solve the deeper problem at hand. And abusing them will lead to addiction.
 
-After setting up the configuration and installing all needed packages with npm you have to start node-blog with `node app.js` and you are ready to go!
+What they don't tell you is that even though they aren't a long term solution, by understanding basic neuroscience you can use them in a way that's the most beneficial (take a dopamine reuptake inhibitor during long study sessions), and accelerate the recovery process and go back to homeostasis 3x sooner(take the opposite, a NDMA antagonist such as memantine), albeit at the cost of extremely reduced dopamine function.
 
+Now that's just an example and I do not recommend doing that at all. 
+
+By understanding each neurotransmitter, and having enough emotional awareness to know when one (or a combination) of them is dominant, you are better able to not get lost in those thoughts. I constantly struggled with depression and anhedonia (lack of serotonin AND dopamine) until I realized what that really means: My dopamine and serotonin pathways are down regulated. I did some research online and found the following to greatly aid my recovery process:
+
+Serotonin: Greek yoghut, raw cacao nibs, sauerkraut, tryptophan supplements.
+Dopamine: Uridine, DHA (fish oil), Choline, Phosphatidylserine, HIIT exercise, Meditation
+Treating CNS fatigue due to low neurotransmitter levels and physical stress: Creatine, Melatonin for 8-10 hour daily naps. 
 ![node-blog](http://semu.mp/node-blog.jpg)

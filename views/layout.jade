@@ -13,12 +13,14 @@ html(lang="de",xmlns="http://www.w3.org/1999/xhtml",xmlns:og="http://ogp.me/ns#"
     link(rel="stylesheet", href="/twitter/bootstrap.css")
     link(rel="stylesheet", href="/styles/docs.css")
     link(rel="stylesheet", href="/styles/custom.css")
+    link(rel="stylesheet", href="/styles/mystyle.css")
     link(rel="stylesheet", href="/google-code-prettify/prettify.css")
     
     script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")    
     script(type="text/javascript", src="/prettyprint/prettify.js")
     script(type="text/javascript", src="/scripts/timeago.js")    
     script(type="text/javascript", src="/scripts/init.js")
+    script(type="text/javascript", src="/scripts/chessboard.js")
     script(type="text/javascript", src="/scripts/showdown.js")
     script(type="text/javascript", src="/scripts/bootstrap-modal.js")
     script(type="text/javascript", src="/scripts/bootstrap-dropdown.js")
@@ -41,6 +43,10 @@ html(lang="de",xmlns="http://www.w3.org/1999/xhtml",xmlns:og="http://ogp.me/ns#"
                 h3
                   a(href="/") node-blog
                 ul.nav
+                  li(class=(meta.current == 'about' ? 'active' : ''))
+                    a(href='/about') About 
+                  li(class=(meta.current == 'team' ? 'active' : ''))
+                    a(href='/team') Team
                   li(class=(meta.current == 'home' ? 'active' : ''))
                     a(href="/") Home
                   li(class=(meta.current == 'posts' ? 'active' : ''))
