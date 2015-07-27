@@ -1,5 +1,5 @@
 doctype html
-html(lang="de",xmlns="http://www.w3.org/1999/xhtml",xmlns:og="http://ogp.me/ns#",xmlns:fb="https://www.facebook.com/2008/fbml")
+html
   head
     title #{meta.title} - #{meta.site}
     - if (meta.desc)
@@ -10,23 +10,27 @@ html(lang="de",xmlns="http://www.w3.org/1999/xhtml",xmlns:og="http://ogp.me/ns#"
       meta(name="author", contents=meta.author)
         
     link(rel="alternate",type="application/rss+xml",title="RSS Feed",href="/feed/")    
-    link(rel="stylesheet", href="/twitter/bootstrap.css")
+    //-link(rel="stylesheet", href="/twitter/bootstrap.css")
     link(rel="stylesheet", href="/styles/docs.css")
     link(rel="stylesheet", href="/styles/custom.css")
     link(rel="stylesheet", href="/styles/mystyle.css")
     link(rel="stylesheet", href="/google-code-prettify/prettify.css")
-    
-    script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")    
-    script(type="text/javascript", src="/prettyprint/prettify.js")
-    script(type="text/javascript", src="/scripts/timeago.js")    
-    script(type="text/javascript", src="/scripts/init.js")
-    script(type="text/javascript", src="/scripts/chessboard.js")
-    script(type="text/javascript", src="/scripts/showdown.js")
-    script(type="text/javascript", src="/scripts/bootstrap-modal.js")
-    script(type="text/javascript", src="/scripts/bootstrap-dropdown.js")
-    script(type="text/javascript", src="/ace/src/ace.js")
-    script(type="text/javascript", src="/ace/src/theme-clouds.js")
-    script(type="text/javascript", src="/ace/src/mode-markdown.js")    
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")    
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+
+
+    script(src="/prettyprint/prettify.js")
+    script(src="/scripts/timeago.js")    
+    script(src="/scripts/init.js")
+    script(src="/scripts/chessboard.js")
+    script(src="/scripts/showdown.js")
+    //-script(src="/scripts/bootstrap-modal.js")
+    //-script(src="/scripts/bootstrap-dropdown.js")
+    script(src="/ace/src/ace.js")
+    script(src="/ace/src/theme-clouds.js")
+    script(src="/ace/src/mode-markdown.js")    
     - if (session.valid)
       script
         var auth = true, redirectTo = null, maxID = #{session.maxID};
@@ -36,33 +40,31 @@ html(lang="de",xmlns="http://www.w3.org/1999/xhtml",xmlns:og="http://ogp.me/ns#"
   body(onload="prettyPrint()")
     .container
       section#navigation
-        .topbar-wrapper(style="z-index: 5;")
-          .topbar(data-dropdown="dropdown")
-            .topbar-inner
-              .container
-                h3
-                  a(href="/") node-blog
-                ul.nav
-                  li(class=(meta.current == 'about' ? 'active' : ''))
-                    a(href='/about') About 
-                  li(class=(meta.current == 'team' ? 'active' : ''))
-                    a(href='/team') Team
-                  li(class=(meta.current == 'home' ? 'active' : ''))
-                    a(href="/") Home
-                  li(class=(meta.current == 'posts' ? 'active' : ''))
-                    a(href="/posts") Posts
-                ul.nav.secondary-nav
-                  - if (session.valid) 
-                    li#adminmenu.dropdown
-                      a.dropdown-toggle(href="#3") Administration
-                      ul.dropdown-menu
-                        li
-                          a#buttoncompose(href="#") Compose Article…
-                        li
-                          a#buttondrafts(href="#") Show Drafts…
-                  - else
+        .navbar-wrapper
+          .navbar.navbar-fixed-top.nav-links.navbar-inverse
+            ul.nav.navbar-nav
+              li
+                a(href="/" class="leftify") Androgeniq
+              li(class=(meta.current == 'about' ? 'active' : ''))
+                a(href='/about') About 
+              li(class=(meta.current == 'team' ? 'active' : ''))
+                a(href='/team') Team
+              li(class=(meta.current == 'home' ? 'active' : ''))
+                a(href="/") Home
+              li(class=(meta.current == 'posts' ? 'active' : ''))
+                a(href="/posts") Posts
+            ul.nav.top.nav-links.navbar-right
+              - if (session.valid) 
+                li#adminmenu.dropdown
+                  a.dropdown-toggle(href="#3") Administration
+                  ul.dropdown-menu
                     li
-                      a#login(href="#") Login
+                      a#buttoncompose(href="#") Compose Article…
+                    li
+                      a#buttondrafts(href="#") Show Drafts…
+              - else
+                li
+                  a#login(href="#") Login
     #content!= body
     #logindata.modal.hide.fade
       .modal-header
