@@ -178,7 +178,7 @@ srv.all('/', function(req, res) {
 	mdb.setMeta('title', 'Home, node-blog');
   mdb.setMeta('current', 'home');
 
-  return res.send('home', mdb.jadeData({list: mdb.getArticles()}, req));
+  return res.render('home', mdb.jadeData({list: mdb.getArticles()}, req));
 });
 
 /**

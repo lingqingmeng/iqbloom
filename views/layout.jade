@@ -42,29 +42,37 @@ html
       section#navigation
         .navbar-wrapper
           .navbar.navbar-fixed-top.nav-links.navbar-inverse
-            ul.nav.navbar-nav
-              li
-                a(href="/" class="leftify") Androgeniq
-              li(class=(meta.current == 'about' ? 'active' : ''))
-                a(href='/about') About 
-              li(class=(meta.current == 'team' ? 'active' : ''))
-                a(href='/team') Team
-              li(class=(meta.current == 'home' ? 'active' : ''))
-                a(href="/") Home
-              li(class=(meta.current == 'posts' ? 'active' : ''))
-                a(href="/posts") Posts
-            ul.nav.top.nav-links.navbar-right
-              - if (session.valid) 
-                li#adminmenu.dropdown
-                  a.dropdown-toggle(href="#3") Administration
-                  ul.dropdown-menu
-                    li
-                      a#buttoncompose(href="#") Compose Article…
-                    li
-                      a#buttondrafts(href="#") Show Drafts…
-              - else
+            .navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+                  span.icon-bar
+                    |         
+                    span.icon-bar
+                    |         
+                    span.icon-bar
+            div(id="myNavbar").collapse.navbar-collapse
+              ul.nav.navbar-nav
                 li
-                  a#login(href="#") Login
+                  a(href="/" class="leftify") Androgeniq
+                li(class=(meta.current == 'about' ? 'active' : ''))
+                  a(href='/about') About 
+                li(class=(meta.current == 'team' ? 'active' : ''))
+                  a(href='/team') Team
+                li(class=(meta.current == 'home' ? 'active' : ''))
+                  a(href="/") Home
+                li(class=(meta.current == 'posts' ? 'active' : ''))
+                  a(href="/posts") Posts
+              ul.nav.top.nav-links.navbar-right
+                - if (session.valid) 
+                  li#adminmenu.dropdown
+                    a.dropdown-toggle(href="#3") Administration
+                    ul.dropdown-menu
+                      li
+                        a#buttoncompose(href="#") Compose Article…
+                      li
+                        a#buttondrafts(href="#") Show Drafts…
+                - else
+                  li
+                    a#login(href="#") Login
     #content!= body
     #logindata.modal.hide.fade
       .modal-header
