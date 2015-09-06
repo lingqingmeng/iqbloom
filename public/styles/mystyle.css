@@ -12,6 +12,7 @@
 
 .mymain {
   margin-top: 90px;
+  width: 100%;
 }
 
 
@@ -22,6 +23,34 @@
   z-index: 2;
 }
 .center { margin-left: auto; margin-right: auto;display: block;}
+
+.mycenter h3{
+  width: 100%;
+  text-align: center!important;
+}
+
+.mycenter h2 h3 h4{
+  width: 100%;
+  text-align: center!important;
+}
+.myboxshadow {
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.mygrey {
+  background-color: silver;
+}
+
+.mylightgrey {
+  background-color: #D4D4D4;
+}
+
+.mymargin {
+  padding-left: 20px;
+  padding-right: 20px;
+  /*margin-left: 10px;
+  margin-right: 10px;*/
+}
 /*video {
   position: absolute;
   opacity: .9;

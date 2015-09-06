@@ -1,0 +1,4 @@
+Documenting the git push process:
+
+1. Save changes in local/github/iqbloom
+2. 
