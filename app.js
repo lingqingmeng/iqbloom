@@ -175,7 +175,7 @@ srv.all('/team',function (req,res){
  **/
 srv.all('/', function(req, res) {
 	mdb.setMeta('url', mdb.getDefault('url'));
-	mdb.setMeta('title', 'Home, node-blog');
+	mdb.setMeta('title', 'Androgeniq - The offical site for sports nutrition products CM Endure and SZ Recover');
   mdb.setMeta('current', 'home');
 
   return res.render('home', mdb.jadeData({list: mdb.getArticles()}, req));

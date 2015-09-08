@@ -45,7 +45,9 @@
 
 #article-list.container.home.mymain
   section
-    h1 Product Overview
+    h1
+      b Top Selling Products
+    hr
     .row
       .col-sm-4.mymargin.mycenter
         h2 CM Endure
@@ -53,9 +55,9 @@
         h3.myboxshadow.mygrey Cordyceps Militaris 
         h4.myboxshadow.mylightgrey One of the strongest stamina boosting products found in nature. Reportedly had profound boosts on performance in the 1992 Olympic Games. Usage occurs commonly in endurane based sports such as a Track and Field, Swimming and Rowing.
       .col-sm-4.mymargin
-        h2 RR Recovery
+        h2 SZ Recovery
         img(src="pagepics/myrhodiola.jpg" class="img-responsive my-height")
-        h3.myboxshadow.mygrey Rhodiola Rosea
+        h3.myboxshadow.mygrey Rhodiola and Schizandra
         h4.myboxshadow.mylightgrey Usage of rhodiola as a daily preventative against fatigue has been reported to be effective in doses as low as 50mg. Acute usage of rhodiola for fatigue and anti-stress has been noted to be taken in the 288-680mg range.
 
 
@@ -66,8 +68,7 @@
         h4.myboxshadow.mylightgrey (Ashwagandha) Gaba promoting agent. Reduces anxiety and perceived stress
     
           
-    .row
-      p dollars and sense
+    hr
 
   //- section
   //-   p chessboard will go here
@@ -77,8 +78,19 @@
   //-       li(class=val) somecolor
   //-   div(id="myhover") hoverme
   section
-    p Thanks for downloading and running <a href="http://semu.mp/node-blog.html">node-blog</a>, I really appreciate it! With node-blog you have a basic weblog system written in Node.js managed by a folder containing markdown files. All article composing can be done within the web browser using the awesome <a href="http://ace.ajax.org/">Ace editor</a>. Unfortunately there is no other way for changing the layout or static pages than to manually edit the raw jade templates, this may change in future releases…
-    p You are viewing the first release of node-blog, please be kind ;) All needed information to start your own blog using node-blog and how to customize the design can be found in the <code>markdown/</code> folder or as <a href="/posts">posts on this site</a>.
+    .row
+      .col-md-6
+        .mybold.mycenter Made for hard working people
+        .mycenter list items
+      .col-md-6
+        .mybold.mycenter Made from only natural ingredients
+        .mycenter list of items
+    hr
+    .row
+      .col-md-12
+        b Need big banner picture here....... til here
+        p text needs to be inside banner picture
+
   section#article
     .page-header
       h1 Recent Articles 
